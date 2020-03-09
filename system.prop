@@ -1,0 +1,19 @@
+
+# Performance
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+# RIL
+vendor.rild.libpath=mtk-ril.so
+vendor.rild.libargs=-d/dev/ttyC0
+
+# USB Charge only function
+ro.sys.usb.charging.only=yes
+
+# temporary enables NAV bar (soft keys)
+qemu.hw.mainkeys=0
+
+# Camera
+persist.camera.HAL3.enabled=1
+persist.camera.eis.enable=1

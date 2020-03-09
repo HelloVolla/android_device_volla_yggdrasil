@@ -1,0 +1,18 @@
+on init
+    setprop sys.usb.ffs.aio_compat 1
+    setprop persist.adb.nonblocking_ffs 0
+    setprop ro.adb.nonblocking_ffs 0
+    setprop persist.sys.usb.config adb
+
+    # Force disable all VoLTE support -- it requires intensive modification of frameworks
+    # without framework support it creates all sorts of problems. Disable it.
+    setprop persist.vendor.mtk.volte.enable 0
+    setprop persist.vendor.mtk_ct_volte_support 0
+
+on zygote-start
+    # Custom overrides that need to happen AFTER things like Magisk have loaded
+    # zygote-start is re-run after decryption, so we can be sure these will be mounted
+    # over the Magisk ones
+    # Remove default overlay to frameworks-res so that ours can work
+    mount none /system/overlay/DummyOverlay.apk /vendor/overlay/framework-res__auto_generated_rro.apk bind
+
