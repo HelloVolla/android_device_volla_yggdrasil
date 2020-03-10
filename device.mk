@@ -24,8 +24,8 @@ PRODUCT_PACKAGES += \
     libaacwrapper
 
 # Camera
-PRODUCT_PACKAGES += \
-    Snap
+#PRODUCT_PACKAGES += \
+#    Snap
 
 # Init cripts
 PRODUCT_PACKAGES += \
@@ -40,8 +40,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/mtk-kpd.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/mtk-kpd.kl
 
 # Overlay
-PRODUCT_PACKAGES += \
-    DummyOverlay
+# PRODUCT_PACKAGES += \
+#    DummyOverlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
