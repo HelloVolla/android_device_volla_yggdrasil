@@ -1,0 +1,26 @@
+# Halium 9/Ubuntu Touch adaptation
+
+# libhybris linker
+/usr/lib/@{multiarch}/libhybris/**.so mr,
+
+# Android libs rules
+/{,android/}odm/lib{,64}/**    r,
+/{,android/}odm/lib{,64}/**.so m,
+/{,android/}system/lib{,64}/**           r,
+/{,android/}system/lib{,64}/**.so        m,
+/{,android/}system/vendor/lib{,64}/**    r,
+/{,android/}system/vendor/lib{,64}/**.so m,
+/{,android/}vendor/lib{,64}/**           r,
+/{,android/}vendor/lib{,64}/**.so        m,
+
+# Allow access to build.prop, properties and logging daemon
+/dev/__properties__/*          r,
+/dev/socket/logdw              rw,
+/{,android/}system/build.prop r,
+
+# Device nodes needed for graphics
+/dev/pmsg0                    rw,
+/dev/hwbinder                 rw,
+
+# Apps should be able to read translations	
+/usr/share/qt5/translations/** r,
