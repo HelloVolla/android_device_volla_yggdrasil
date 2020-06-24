@@ -45,6 +45,10 @@ if [ -e $sys_vendor ]; then
     mount $path /vendor -t $type -o $options
 fi
 
+if [ -d "/system/halium/vendor" ]; then
+    mount -t overlay overlay -o lowerdir=/system/halium/vendor:/vendor /vendor
+fi
+
 if [ -d "/opt/halium-overlay/vendor" ]; then
     mount -t overlay overlay -o lowerdir=/opt/halium-overlay/vendor:/vendor /vendor
 fi
