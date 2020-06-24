@@ -45,11 +45,17 @@ if [ -e $sys_vendor ]; then
     mount $path /vendor -t $type -o $options
 fi
 
-mount -t overlay overlay -o lowerdir=/opt/halium-overlay/vendor:/vendor /vendor
+if [ -d "/opt/halium-overlay/vendor" ]; then
+    mount -t overlay overlay -o lowerdir=/opt/halium-overlay/vendor:/vendor /vendor
+fi
 
-mount -t overlay overlay -o lowerdir=/opt/halium-overlay/system:/android/system /system
-mount -o bind /android/system /var/lib/lxc/android/rootfs/system
+if [ -d "/opt/halium-overlay/system" ]; then
+    mount -t overlay overlay -o lowerdir=/opt/halium-overlay/system:/android/system /system
+    mount -o bind /android/system /var/lib/lxc/android/rootfs/system
+fi
 
+# yggdrasil-specific overrides
+mount -o bind /system/lib/modules /vendor/lib/modules
 
 sys_persist="/sys/firmware/devicetree/base/firmware/android/fstab/persist"
 if [ -e $sys_persist ]; then
