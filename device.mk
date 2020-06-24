@@ -64,3 +64,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/etc/init/urfkill.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/urfkill.conf \
     $(LOCAL_PATH)/halium-overlay/etc/ofono/main.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/ofono/main.conf \
     $(LOCAL_PATH)/halium-overlay/etc/ofono/ril_subscription.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/ofono/ril_subscription.conf
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/halium-overlay/system/lib64/libtinyalsa.so:$(TARGET_COPY_OUT_SYSTEM)/halium/system/lib64/libtinyalsa.so \
+    $(LOCAL_PATH)/halium-overlay/vendor/lib64/libmtk-ril.so:$(TARGET_COPY_OUT_SYSTEM)/halium/vendor/lib64/libmtk-ril.so \
+    $(LOCAL_PATH)/halium-overlay/vendor/lib64/libcameracustom.so:$(TARGET_COPY_OUT_SYSTEM)/halium/vendor/lib64/libcameracustom.so \
+    $(LOCAL_PATH)/halium-overlay/vendor/lib64/libmtkcam_metastore.so:$(TARGET_COPY_OUT_SYSTEM)/halium/vendor/lib64/libmtkcam_metastore.so \
+    $(LOCAL_PATH)/halium-overlay/vendor/lib64/libcam.halsensor.so:$(TARGET_COPY_OUT_SYSTEM)/halium/vendor/lib64/libcam.halsensor.so
