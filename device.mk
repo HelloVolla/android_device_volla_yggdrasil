@@ -62,6 +62,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/etc/init/lxc-android-config.override:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/lxc-android-config.override \
     $(LOCAL_PATH)/halium-overlay/etc/init/mount-android.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/mount-android.conf \
     $(LOCAL_PATH)/halium-overlay/etc/init/urfkill.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/urfkill.conf \
+    $(LOCAL_PATH)/halium-overlay/etc/init/ssh.override:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/ssh.override \
+    $(LOCAL_PATH)/halium-overlay/etc/init/usb-tethering.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/usb-tethering.conf \
     $(LOCAL_PATH)/halium-overlay/etc/ofono/main.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/ofono/main.conf \
     $(LOCAL_PATH)/halium-overlay/etc/ofono/ril_subscription.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/ofono/ril_subscription.conf
 
