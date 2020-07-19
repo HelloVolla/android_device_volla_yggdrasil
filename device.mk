@@ -15,6 +15,13 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ubuntu.widi.supported=1 \
+
+#  OFF charging mode
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # A/B
 AB_OTA_UPDATER := false
 
@@ -55,6 +62,7 @@ PRODUCT_COPY_FILES += \
 
 # Ubuntu Touch overlay
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/halium-overlay/usr/share/repowerd/device-configs/config-default.xml:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/repowerd/device-configs/config-default.xml \
     $(LOCAL_PATH)/halium-overlay/lib/udev/rules.d/70-android.rules:$(TARGET_COPY_OUT_SYSTEM)/halium/lib/udev/rules.d/70-android.rules \
     $(LOCAL_PATH)/halium-overlay/usr/share/apparmor/hardware/graphics.d/apparmor-easyprof-ubuntu_android9:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/apparmor/hardware/graphics.d/apparmor-easyprof-ubuntu_android9 \
     $(LOCAL_PATH)/halium-overlay/usr/sbin/mount-android.sh:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/sbin/mount-android.sh \
