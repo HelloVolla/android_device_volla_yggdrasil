@@ -20,7 +20,7 @@ Front Camera  | 16MPX
 
 Halium 9.0
 ==============
-
+- Telegram Group - https://t.me/utonvolla
 - [X] Booth image and system image build successfully
 - [X] Device boots into rootfs
 - [X] LXC container starts and does not crash
