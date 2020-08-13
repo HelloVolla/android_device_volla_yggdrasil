@@ -7,7 +7,7 @@ Chipset | Mediatek Helio P23
 CPU     | Octa-core 2.0 GHz
 GPU     | Mali
 Memory  | 4GB
-OS      | Android OS, v5.0 (Lolipop), upgradable to v6.0 (Marshmallow)
+OS      | Volla OS, v9.0 - Ubuntu touch - Sailfish OS
 Storage | 64Gb
 Battery | 5000 mAh
 Display | 6.3"  V-Notch
