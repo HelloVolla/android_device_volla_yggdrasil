@@ -17,3 +17,6 @@ qemu.hw.mainkeys=0
 # Camera
 persist.camera.HAL3.enabled=1
 persist.camera.eis.enable=1
+
+# Ubuntu Touch
+ro.ubuntu.camera_plugin=aal
