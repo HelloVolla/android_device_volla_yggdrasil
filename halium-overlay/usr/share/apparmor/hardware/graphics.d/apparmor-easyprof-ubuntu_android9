@@ -10,6 +10,8 @@
 /{,android/}system/lib{,64}/**.so        m,
 /{,android/}system/vendor/lib{,64}/**    r,
 /{,android/}system/vendor/lib{,64}/**.so m,
+/{,android/}system/halium/vendor/lib{,64}/**    r,
+/{,android/}system/halium/vendor/lib{,64}/**.so m,
 /{,android/}vendor/lib{,64}/**           r,
 /{,android/}vendor/lib{,64}/**.so        m,
 
