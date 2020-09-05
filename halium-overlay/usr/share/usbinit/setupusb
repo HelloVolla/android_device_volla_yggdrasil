@@ -1,5 +1,6 @@
 #!/bin/sh
-CONFIG_DIR=/sys/kernel/config/usb_gadget/
+CONFIG_FS=/sys/kernel/config
+CONFIG_DIR=$CONFIG_FS/usb_gadget/
 GADGET_DIR=$CONFIG_DIR/g1
 CONFIG_NAME="c.1"
 
@@ -48,6 +49,13 @@ setup_boot() {
 	if [ -e $GADGET_DIR/functions/mtp.gs0 ]; then
 		echo "Boot setup done"
 		return
+	fi
+
+	if ! mount | grep -q "$CONFIG_FS"; then
+		mount -t configfs none $CONFIG_FS
+		mkdir -p $GADGET_DIR/strings/0x409
+		mkdir -p $GADGET_DIR/functions/rndis.usb0
+		mkdir -p $GADGET_DIR/configs/$CONFIG_NAME/strings/0x409
 	fi
 
 	write $GADGET_DIR/idVendor 0x18D1
