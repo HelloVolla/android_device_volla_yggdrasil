@@ -71,7 +71,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/etc/pulse/touch-android9.pa:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/pulse/touch-android9.pa \
     $(LOCAL_PATH)/halium-overlay/etc/ubuntu-touch-session.d/android.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/ubuntu-touch-session.d/android.conf \
     $(LOCAL_PATH)/halium-overlay/usr/share/upstart/sessions/mtp-server.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/upstart/sessions/mtp-server.conf \
-    $(LOCAL_PATH)/halium-overlay/usr/share/usbinit/setupusb:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/usbinit/setupusb
+    $(LOCAL_PATH)/halium-overlay/usr/share/usbinit/setupusb:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/usbinit/setupusb \
+    $(LOCAL_PATH)/halium-overlay/usr/share/upstart/sessions/cam-freeze-tmpfix.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/upstart/sessions/cam-freeze-tmpfix.conf \
+    $(LOCAL_PATH)/halium-overlay/etc/init/cam-freeze-tmpfix.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/cam-freeze-tmpfix.conf
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/system/lib64/libtinyalsa.so:$(TARGET_COPY_OUT_SYSTEM)/halium/system/lib64/libtinyalsa.so \
