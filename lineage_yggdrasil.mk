@@ -19,7 +19,7 @@ $(call inherit-product, device/volla/yggdrasil/device.mk)
 PRODUCT_NAME := lineage_yggdrasil
 PRODUCT_DEVICE := yggdrasil
 PRODUCT_BRAND := Volla
-PRODUCT_MODEL := Phone
+PRODUCT_MODEL := Volla Phone
 PRODUCT_MANUFACTURER := Volla
 
 # Product characteristics
