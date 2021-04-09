@@ -12,7 +12,7 @@ on init
 on charger
     start charger
 
-service charger /system/bin/charger
+service charger /sbin/charger
     class charger
-    group system wakelock
+    group system graphics wakelock
     capabilities BLOCK_SUSPEND SYS_ADMIN SYS_BOOT
