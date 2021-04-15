@@ -61,6 +61,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/usr/sbin/mount-android.sh:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/sbin/mount-android.sh \
     $(LOCAL_PATH)/halium-overlay/etc/init/aethercast.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/aethercast.conf \
     $(LOCAL_PATH)/halium-overlay/etc/init/bluebinder.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/bluebinder.conf \
+    $(LOCAL_PATH)/halium-overlay/etc/init/charger-reboot.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/charger-reboot.conf \
     $(LOCAL_PATH)/halium-overlay/etc/init/lxc-android-config.override:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/lxc-android-config.override \
     $(LOCAL_PATH)/halium-overlay/etc/init/mount-android.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/mount-android.conf \
     $(LOCAL_PATH)/halium-overlay/etc/init/mtp-state.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/mtp-state.conf \
