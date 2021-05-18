@@ -70,7 +70,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/etc/init/usb-tethering.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/usb-tethering.conf \
     $(LOCAL_PATH)/halium-overlay/etc/ofono/main.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/ofono/main.conf \
     $(LOCAL_PATH)/halium-overlay/etc/ofono/ril_subscription.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/ofono/ril_subscription.conf \
-    $(LOCAL_PATH)/halium-overlay/etc/pulse/touch-android9.pa:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/pulse/touch-android9.pa \
     $(LOCAL_PATH)/halium-overlay/etc/ubuntu-touch-session.d/android.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/ubuntu-touch-session.d/android.conf \
     $(LOCAL_PATH)/halium-overlay/usr/share/upstart/sessions/mtp-server.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/upstart/sessions/mtp-server.conf \
     $(LOCAL_PATH)/halium-overlay/usr/share/usbinit/setupusb:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/usbinit/setupusb
