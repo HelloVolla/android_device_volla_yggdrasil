@@ -76,6 +76,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/system/lib64/libtinyalsa.so:$(TARGET_COPY_OUT_SYSTEM)/halium/system/lib64/libtinyalsa.so \
+    $(LOCAL_PATH)/halium-overlay/vendor/.halium-overlay-dir:$(TARGET_COPY_OUT_SYSTEM)/halium/vendor/.halium-overlay-dir \
     $(LOCAL_PATH)/halium-overlay/vendor/lib/hw/audio.primary.mt6763.so:$(TARGET_COPY_OUT_SYSTEM)/halium/vendor/lib/hw/audio.primary.mt6763.so \
     $(LOCAL_PATH)/halium-overlay/vendor/lib64/hw/audio.primary.mt6763.so:$(TARGET_COPY_OUT_SYSTEM)/halium/vendor/lib64/hw/audio.primary.mt6763.so \
     $(LOCAL_PATH)/halium-overlay/vendor/lib64/libcam.halsensor.so:$(TARGET_COPY_OUT_SYSTEM)/halium/vendor/lib64/libcam.halsensor.so \

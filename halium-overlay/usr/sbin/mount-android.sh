@@ -58,9 +58,6 @@ if [ -d "/opt/halium-overlay/system" ]; then
     mount -o bind /android/system /var/lib/lxc/android/rootfs/system
 fi
 
-# yggdrasil-specific overrides
-mount -o bind /system/lib/modules /vendor/lib/modules
-
 sys_persist="/sys/firmware/devicetree/base/firmware/android/fstab/persist"
 if [ -e $sys_persist ]; then
     label=$(cat $sys_persist/dev | awk -F/ '{print $NF}')
