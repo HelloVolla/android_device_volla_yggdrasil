@@ -151,3 +151,7 @@ ACTION=="add", KERNEL=="sw_sync", OWNER="system", GROUP="android_graphics", MODE
 ACTION=="add", KERNEL=="ccu", OWNER="system", GROUP="camera", MODE="0666"
 ACTION=="add", KERNEL=="MTK_SMI", OWNER="media", GROUP="android_media", MODE="0660"
 ACTION=="add", KERNEL=="mtk_dfrc", OWNER="system", GROUP="android_graphics", MODE="0660"
+
+# Enable KVM for all users in phablet
+# Ultimately access is mediated by AppArmor
+KERNEL=="kvm", GROUP="phablet", MODE="0660"
