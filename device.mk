@@ -60,7 +60,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/usr/share/upstart/sessions/audiosystem-passthrough.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/upstart/sessions/audiosystem-passthrough.conf \
     $(LOCAL_PATH)/halium-overlay/usr/sbin/mount-android.sh:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/sbin/mount-android.sh \
     $(LOCAL_PATH)/halium-overlay/etc/init/aethercast.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/aethercast.conf \
-    $(LOCAL_PATH)/halium-overlay/etc/init/bluebinder.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/bluebinder.conf \
     $(LOCAL_PATH)/halium-overlay/etc/init/charger-reboot.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/charger-reboot.conf \
     $(LOCAL_PATH)/halium-overlay/etc/init/lxc-android-config.override:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/lxc-android-config.override \
     $(LOCAL_PATH)/halium-overlay/etc/init/mount-android.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/mount-android.conf \
@@ -71,6 +70,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/etc/ofono/main.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/ofono/main.conf \
     $(LOCAL_PATH)/halium-overlay/etc/ofono/ril_subscription.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/ofono/ril_subscription.conf \
     $(LOCAL_PATH)/halium-overlay/etc/ubuntu-touch-session.d/android.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/ubuntu-touch-session.d/android.conf \
+    $(LOCAL_PATH)/halium-overlay/usr/lib/lxc-android-config/device-hacks:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/lib/lxc-android-config/device-hacks \
     $(LOCAL_PATH)/halium-overlay/usr/share/upstart/sessions/mtp-server.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/upstart/sessions/mtp-server.conf \
     $(LOCAL_PATH)/halium-overlay/usr/share/usbinit/setupusb:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/usbinit/setupusb
 
