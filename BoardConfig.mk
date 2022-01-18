@@ -66,9 +66,6 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_SEPARATED_DTBO := true
 NEED_KERNEL_MODULE_SYSTEM := true
 
-# Use local initramfs from initramfs.gz
-BOARD_USE_LOCAL_INITRD := true
-
 # Netd
 # BUILD_BROKEN_DUP_RULES := true
 # BUILD_BROKEN_PHONY_TARGETS := true
