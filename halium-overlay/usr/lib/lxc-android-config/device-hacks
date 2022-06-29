@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# This device has to be told when it's appropriate to start Wi-Fi. How it works
+# on Android, I'm not sure, but this is how it's done on many of MTK devices.
+
+while [ "$(getprop vendor.service.nvram_init)" != "Ready" ]; do
+    sleep 0.2
+done
+
+while [ ! -e /dev/wmtWifi ]; do
+    sleep 0.2
+done
+
+# Apparently solves some races preventing it from detecting 5GHz?
+sleep 2
+
+echo 1 > /dev/wmtWifi
