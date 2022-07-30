@@ -59,6 +59,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/usr/share/apparmor/hardware/graphics.d/apparmor-easyprof-ubuntu_android9:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/apparmor/hardware/graphics.d/apparmor-easyprof-ubuntu_android9 \
     $(LOCAL_PATH)/halium-overlay/usr/share/upstart/sessions/audiosystem-passthrough.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/upstart/sessions/audiosystem-passthrough.conf \
     $(LOCAL_PATH)/halium-overlay/usr/sbin/mount-android.sh:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/sbin/mount-android.sh \
+    $(LOCAL_PATH)/halium-overlay/etc/default/usb-moded.d/device-specific-config.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/default/usb-moded.d/device-specific-config.conf \
     $(LOCAL_PATH)/halium-overlay/etc/init/aethercast.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/aethercast.conf \
     $(LOCAL_PATH)/halium-overlay/etc/init/charger-reboot.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/charger-reboot.conf \
     $(LOCAL_PATH)/halium-overlay/etc/init/lxc-android-config.override:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/lxc-android-config.override \
