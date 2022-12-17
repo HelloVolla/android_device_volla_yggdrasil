@@ -1,0 +1,10 @@
+k63v2_64_bsp:
+  Vendor: Volla
+  PrettyName: Volla Phone
+  DeviceType: phone
+  GridUnit: 21
+  SupportedOrientations:
+    - Portrait
+    - Landscape
+    - InvertedLandscape
+  VibrateDurationExtraMs: 40
