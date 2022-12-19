@@ -73,7 +73,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/etc/ubuntu-touch-session.d/android.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/ubuntu-touch-session.d/android.conf \
     $(LOCAL_PATH)/halium-overlay/usr/lib/lxc-android-config/device-hacks:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/lib/lxc-android-config/device-hacks \
     $(LOCAL_PATH)/halium-overlay/usr/share/upstart/sessions/mtp-server.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/upstart/sessions/mtp-server.conf \
-    $(LOCAL_PATH)/halium-overlay/usr/share/usbinit/setupusb:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/usbinit/setupusb
+    $(LOCAL_PATH)/halium-overlay/usr/share/usbinit/setupusb:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/usbinit/setupusb \
+    $(LOCAL_PATH)/halium-overlay/etc/deviceinfo/devices/halium.yaml:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/deviceinfo/devices/halium.yaml
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/system/lib64/libtinyalsa.so:$(TARGET_COPY_OUT_SYSTEM)/halium/system/lib64/libtinyalsa.so \
