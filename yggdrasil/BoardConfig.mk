@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 Hallo Welt Systeme UG
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,6 +16,6 @@
 
 BOARD_VENDOR := volla
 
-DEVICE_PATH := device/volla/yggdrasil
+DEVICE_PATH := device/volla/yggdrasil-unified
 
 -include $(DEVICE_PATH)/BoardConfig.mk

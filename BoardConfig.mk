@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 Hallo Welt Systeme UG
+# Copyright (C) 2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -31,4 +31,4 @@ TARGET_KERNEL_CONFIG := gs290_defconfig
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # inherit from the proprietary version
--include vendor/volla/yggdrasil/BoardConfigVendor.mk
+-include vendor/volla/yggdrasil-unified/BoardConfigVendor.mk

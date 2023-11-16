@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2022 Hallo Welt Systeme UG
+# Copyright (C) 2017-2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -15,7 +15,7 @@ fi
 set -e
 
 # Required!
-export DEVICE=yggdrasil
+export DEVICE=yggdrasil-unified
 export DEVICE_HEADER="yggdrasil"
 export DEVICE_COMMON=mt6763-common
 export VENDOR=volla

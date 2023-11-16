@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from yggdrasil device
-$(call inherit-product, device/volla/yggdrasil/device.mk)
+$(call inherit-product, device/volla/yggdrasil-unified/device.mk)
 
 PRODUCT_BRAND := volla
 PRODUCT_DEVICE := yggdrasil
